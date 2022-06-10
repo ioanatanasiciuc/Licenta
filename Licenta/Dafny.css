@@ -1,0 +1,185 @@
+
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: #A99DCF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    padding: 10px;
+    background: #A99DCF;
+    border-bottom-style: solid;
+    border-bottom-color:  #DEDEE0;
+    width: 100%;
+  }
+
+  h1{
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 20px;
+    color:#594AA5 ;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+select{
+    font-size: 20px;
+    color: #594AA5;
+}
+
+select :hover{
+    background-color: #594AA5;
+}
+
+  h1, select{
+      display: inline-block;
+      vertical-align: middle;
+  }
+
+  .editor{
+    position: absolute;
+    left: 30px;
+  }
+
+  .editor,.output{
+    margin: 32px;
+    padding: 0%;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #DEDEE0;
+    width: 45%;
+    border-style: solid;
+    border-color: #594AA5;
+  }
+
+  #codeEditor, #lineCounter {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 75vh;
+    border-radius: 0;
+    resize: none;
+    font-size: 16px;
+    line-height: 1.2;
+    outline: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#lineCounter:focus-visible,
+#codeEditor:focus-visible {
+    outline:none;
+}
+
+#lineCounter {
+    display: flex;
+    border-color: transparent;
+    overflow-y: hidden;
+    text-align: right;
+    box-shadow: none;
+    color: #707070;
+    position: absolute;
+    width: 3rem;
+    height:75.5vh;
+    background-color:#C5BCE1;
+    border-color:#C5BCE1;
+    color:#9185C4;
+}
+
+#codeEditor {
+    padding-left: calc(3.5rem + 5px);
+    width:100%;
+    background-color:#DEDEE0;
+    border-color:#DEDEE0;
+    color:#594AA5;
+}
+
+.output{
+  position: absolute;
+  left: 750px;
+  height: 75.5vh;
+}
+
+.output-header {
+  position: absolute;
+  padding: 0;
+  margin:0;
+  left: 0px;
+  top: 0px;
+  height: 109px;
+  width: 100%;
+  background-color:#A99DCF;
+  border-bottom-style: solid;
+  border-bottom-color: #594AA5;
+}
+
+
+img {
+  top:0;
+  left:0;
+  padding: 0;
+  background-color:#594AA5;
+  border:#594AA5;
+}
+
+#runBtn, #tutorialBtnImg{
+  height: 109px;  
+  width: 151px;
+}
+
+#tutorialBtnImg{
+  right:0;
+}
+
+#runBtn,#tutorialBtnImg,#output-title{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#runBtn, #output-title{
+  margin-right: 70px;
+}
+
+#tutorialBtnImg, #output-title{
+  margin-left: 70px;
+}
+
+h2{
+  margin: 0;
+  color:#594AA5 ;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.output-footer {
+  position: absolute;
+  padding: 0;
+  margin:0;
+  left: 0;
+  bottom: 0;
+  height: 109px;
+  width: 100%;
+  background-color:#A99DCF;
+  border-top-style: solid;
+  border-top-color: #594AA5;
+}
+
+#documentationBtnImg{
+  right: 0;
+}
+
+#AboutDafny, #documentationBtnImg{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#AboutDafny{
+  padding: 29.2px;
+}
+
+#documentationBtnImg{
+  height: 109px;
+  width: 150px;
+}

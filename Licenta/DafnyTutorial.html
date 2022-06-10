@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="DafnyTutorial.css">
+
+    <title>Dafny Tutorial</title>
+</head>
+<body>
+
+    <div class="header">
+        
+        <h1>Dafny Guide</h1>
+
+    </div>
+
+
+    <h3 id="introduction">Introduction</h3>
+
+    <p>Dafny is a language that is designed to make it easy to
+    write correct code. This means correct in the sense of not having any runtime
+    errors, but also correct in actually doing what the programmer intended it to
+    do. To accomplish this, Dafny relies on high-level annotations to reason about
+    and prove correctness of code. The effect of a piece of code can be given abstractly,
+    using a natural, high-level expression of the desired behavior, which is easier
+    and less error prone to write. Dafny then generates a proof that the code
+    matches the annotations (assuming they are correct, of course!). Dafny lifts the
+    burden of writing bug-free <em>code</em> into that of writing bug-free <em>annotations</em>.
+    This is often easier than writing the code, because annotations are shorter and
+    more direct. For example, the following fragment of annotation in Dafny says
+    that every element of the array is strictly positive:</p>
+    
+    <pre><code id="bigcode">forall k: int :: 0 &lt;= k &lt; a.Length ==&gt; 0 &lt; a[k]</code></pre>
+    
+    <p>This says that for all integers <code id="smallcode">k</code>
+    that are indices into the array, the value at that index is greater than zero.
+    By writing these annotations, one is confident that the code is correct.
+    Further, the very act of writing the annotations can help one understand what the
+    code is doing at a deeper level.</p>
+    
+    <p>In addition to proving a correspondence to user supplied
+    annotations, Dafny proves that there are no run time errors, such as index out
+    of bounds, null dereferences, division by zero, etc. This guarantee is a
+    powerful one, and is a strong case in and of itself for the use of Dafny and
+    tools like it. Dafny also proves the termination of code, except in specially
+    designated loops.</p>
+    
+    <p>Let’s get started writing some Dafny programs.</p>
+    
+    <h1> ... </h1>
+   
+</body>
+</html>

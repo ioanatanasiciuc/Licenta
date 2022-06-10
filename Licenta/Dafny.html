@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dafny.css">
+    <title>Dafny Editor</title>
+</head>
+<body>
+    <div class="header">
+        
+        <h1>Dafny</h1>
+
+        <select name = "File">
+            <option value="File"> File </option>
+            <option value="Save"> Save </option>
+            <option value="Download"> Download</option>
+            <option value="Load"> Load</option>
+        </select>
+
+    </div>
+
+    <div class="middle">
+
+        <div class="editor">
+            <textarea id='lineCounter' wrap='off' readonly>1.</textarea>
+            <textarea id='codeEditor' wrap='off'></textarea>
+
+        </div>
+        
+        <div class="output">
+             <div class="output-header">
+                <a href="Dafny.html" target="_blank">
+                    <img src="RunButton.png" id="runBtn">
+                </a>
+                <h2 id="output-title"> OUTPUT </h2>
+                <a href="DafnyTutorial.html" target="_blank">
+                    <img src="TutorialsButton.png" id="tutorialBtnImg">
+            </a>
+             </div>
+
+             <div class="output-footer">
+                
+                <p id="AboutDafny">
+                    Dafny - A language and program verifier for functional correctness.
+                </p>
+                
+                <a href="https://dafny.org/dafny/DafnyRef/DafnyRef" target="_blank">
+                    <img src="DocumentationButton.png" id="documentationBtnImg">
+                </a>
+             </div>
+
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script src="EditorLineNumbersGenerator.js"></script>
